@@ -1,16 +1,16 @@
 import React from "react";
 
-const Toolbar = () => {
+const Toolbar = ({ insertText }) => {
   return (
     <div className="toolbar">
-      <button>h1</button>
-      <button>h2</button>
-      <button>Bold</button>
-      <button>Italic</button>
-      <button>Link</button>
-      <button>Code Block</button>
-      <button>List Item</button>
-      <button>Horizontal Line</button>
+      <button onClick={() => insertText("# ", "")}>h1</button>
+      <button onClick={() => insertText("## ", "")}>h2</button>
+      <button onClick={() => insertText("**", "**")}>Bold</button>
+      <button onClick={() => insertText("*", "*")}>Italic</button>
+      <button onClick={() => insertText("[", "](htts://)")}>Link</button>
+      <button onClick={() => insertText("```", "```")}>Code Block</button>
+      <button onClick={() => insertText("- ", "")}>List Item</button>
+      <button onClick={() => insertText("\n---\n ", "")}>Horizontal Line</button>
     </div>
   );
 };

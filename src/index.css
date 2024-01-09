@@ -7,7 +7,7 @@
 
 body {
     background: linear-gradient(to bottom, #89CFF0, #005C99);
-    height: 100vh;
+    height: 100%;
 }
 
 .app-container {
